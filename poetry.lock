@@ -1617,18 +1617,18 @@ xray = ["aws-xray-sdk (>=0.93,!=0.96)", "setuptools"]
 
 [[package]]
 name = "mypy-boto3"
-version = "1.21.8"
-description = "Type annotations for boto3 1.21.8 master module generated with mypy-boto3-builder 7.1.2"
+version = "1.34.4"
+description = "Type annotations for boto3 1.34.4 master module generated with mypy-boto3-builder 7.22.0"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 files = [
-    {file = "mypy-boto3-1.21.8.tar.gz", hash = "sha256:79009389b209976698bf4b36cf4f5cc081f4771dbf92b53b17f65df81487a315"},
-    {file = "mypy_boto3-1.21.8-py3-none-any.whl", hash = "sha256:b65857938fc95ec9ac3dca614704f4383d399bffa046cb6c28017eaa10fc20d0"},
+    {file = "mypy-boto3-1.34.4.tar.gz", hash = "sha256:e3671c1fc08f6e126e67a78e39bf6b9c187dfe4cdfd0a8bea38f6dc80fef3dad"},
+    {file = "mypy_boto3-1.34.4-py3-none-any.whl", hash = "sha256:60e891d775c35fcc71050a5f9c75c0a921593c97bab4bddda9224f770c0ef6d0"},
 ]
 
 [package.dependencies]
 boto3 = "*"
-typing-extensions = {version = "*", markers = "python_version < \"3.9\""}
+typing-extensions = {version = ">=4.1.0", markers = "python_version < \"3.12\""}
 
 [[package]]
 name = "mypy-boto3-acm"

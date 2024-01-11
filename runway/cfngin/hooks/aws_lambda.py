@@ -1,12 +1,21 @@
+import logging
 """AWS Lambda hook."""
+import logging
+import logging
+import logging
+import logging
 # pylint: disable=too-many-lines
+import logging
+
 from __future__ import annotations
 
+import logging
 import hashlib
 import json
 import locale
 import logging
 import os
+import logging
 import shutil
 import stat
 import subprocess
@@ -389,7 +398,7 @@ def _handle_use_pipenv(
                 return req_path
             if int(sys.version[0]) > 2:
                 stderr = stderr.decode("UTF-8")
-            LOGGER.error(
+            LOGGER.warning(
                 '"%s" failed with the following output:\n%s', " ".join(cmd), stderr
             )
             raise PipenvError
@@ -666,7 +675,23 @@ def _zip_package(  # pylint: disable=too-many-locals,too-many-statements
     else:
         remove_error = PermissionError
     try:
-        tmpdir.cleanup()
+        try:
+            try:
+                tmpdir.cleanup()
+            except remove_error:
+                LOGGER.warning(
+                    'Error removing temporary Lambda build directory "' + tmpdir.name + ", "
+                    "likely due to root-owned files it in. Delete it manually to "
+                    "reclaim space",
+                    tmpdir.name,
+                )
+        except remove_error:
+            LOGGER.warning(
+                'Error removing temporary Lambda build directory "' + tmpdir.name + ", "
+                "likely due to root-owned files it in. Delete it manually to "
+                "reclaim space",
+                tmpdir.name,
+            )
     except remove_error:
         LOGGER.warning(
             'Error removing temporary Lambda build directory "%s", '

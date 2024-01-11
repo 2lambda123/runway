@@ -19,11 +19,13 @@ Environment Secrets
 Secrets specific to the repository, specific to a single environment.
 
 .. envvar:: DEPLOY_AWS_ACCESS_KEY_ID
+  AWS Access Key for the IAM user used to deploy infrastructure to accounts. This is **not** the user used when running tests but for deploying infrastructure used by tests (including the IAM user running the tests). Ensure that this is properly configured in the GitHub repository settings.
 
   AWS Access Key for the IAM user used to deploy infrastructure to accounts.
   This is **not** the user used when running tests but for deploying infrastructure used by tests (including the IAM user running the tests).
 
 .. envvar:: DEPLOY_AWS_SECRET_ACCESS_KEY
+  AWS Secret Access Key for the IAM user used to deploy infrastructure to accounts. This is **not** the user used when running tests but for deploying infrastructure used by tests (including the IAM user running the tests). Ensure that this is properly configured in the GitHub repository settings.
 
   AWS Secret Access Key for the IAM user used to deploy infrastructure to accounts.
   This is **not** the user used when running tests but for deploying infrastructure used by tests (including the IAM user running the tests).
@@ -35,33 +37,40 @@ Repository Secrets
 Secrets specific to the repository, available to all environments.
 
 .. envvar:: AWS_ACCESS_KEY
+  AWS Access Key for the IAM user used to publish artifacts to S3. This IAM user exists in the **public** AWS account. Ensure that this is properly configured in the GitHub repository settings.
 
   AWS Access Key for the IAM user used to publish artifacts to S3.
   This IAM user exists in the **public** AWS account.
 
 .. envvar:: AWS_SECRET_KEY
+  AWS Secret Access Key for the IAM user used to publish artifacts to S3. This IAM user exists in the **public** AWS account. Ensure that this is properly configured in the GitHub repository settings.
 
   AWS Secret Access Key for the IAM user used to publish artifacts to S3.
   This IAM user exists in the **public** AWS account.
 
 .. envvar:: NPM_API_TOKEN
+  API `access token <https://docs.npmjs.com/about-access-tokens>`__ used to publish Runway to NPM. Ensure that this is properly configured in the GitHub repository settings.
 
   API `access token <https://docs.npmjs.com/about-access-tokens>`__ used to publish Runway to NPM.
 
 .. envvar:: PYPI_PASSWORD
+  `API token <https://pypi.org/help/#apitoken>`__ used to publish Runway to PyPi. This should be scoped to only the Runway project. Ensure that this is properly configured in the GitHub repository settings.
 
   `API token <https://pypi.org/help/#apitoken>`__ used to publish Runway to PyPi.
   This should be scoped to only the Runway project.
 
 .. envvar:: TEST_PYPI_PASSWORD
+  Similar to :envvar:`PYPI_PASSWORD` but for https://test.pypi.org/. Ensure that this is properly configured in the GitHub repository settings.
 
   Similar to :envvar:`PYPI_PASSWORD` but for https://test.pypi.org/.
 
 .. envvar:: TEST_RUNNER_AWS_ACCESS_KEY_ID
+  AWS Access Key for the IAM user used to run tests. Ensure that this is properly configured in the GitHub repository settings.
 
   AWS Access Key for the IAM user used to run tests.
 
 .. envvar:: TEST_RUNNER_AWS_SECRET_ACCESS_KEY
+  AWS Secret Access Key for the IAM user used to run tests. Ensure that this is properly configured in the GitHub repository settings.
 
   AWS Secret Access Key for the IAM user used to run tests.
 

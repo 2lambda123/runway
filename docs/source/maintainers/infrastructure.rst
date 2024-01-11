@@ -2,23 +2,23 @@
 Infrastructure
 ##############
 
-The Runway repository uses some external infrastructure to run tests and server public content.
+The Runway repository uses external infrastructure to run tests, serve public content, and deploy services to multiple AWS accounts.
 The code that deploys this infrastructure is located in the ``infrastructure/`` directory.
-Each subdirectory is a logical separation between AWS accounts.
+Each subdirectory represents a logical separation between AWS accounts used for different purposes.
 
 
 ************************
-Deploying Infrastructure
+Deploying Infrastructure for Different Environments
 ************************
 
-Infrastructure can be deployed from the root of the ``infrastructure/`` directory for any environment.
+Runway infrastructure is deployed for different environments from the root of the ``infrastructure/`` directory.
 We make use of ``make`` to simplify the process.
 
 To execute Runway for an environment, use the following command syntax.
 
 .. code-block:: shell
 
-  $ make <runway-subcommand> <environment>
+  $ make deploy <environment>
 
 .. rubric:: Example
 .. code-block:: shell
@@ -38,11 +38,7 @@ onica-public-prod
 
 .. rubric:: Resources
 
-- public S3 bucket that houses build artifacts
-
-  - binary executables
-
-- IAM user used by GitHub Actions & it's policies
+**Public infrastructure primarily used to host the public content and artifacts. It includes an S3 bucket for build artifacts and an IAM user used by GitHub Actions for syncing and adding entries to a DynamoDB table.**
 
   - able to sync with the artifact bucket
   - add entries to a DynamoDB table for the ``oni.ca`` URL shortener app

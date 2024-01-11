@@ -1,4 +1,4 @@
-"""Base classes for dependency managers."""
+"""Base classes for managing dependencies."""
 from __future__ import annotations
 
 from pathlib import Path
@@ -15,10 +15,10 @@ if TYPE_CHECKING:
 
 
 class DependencyManager(CliInterfaceMixin):
-    """Dependency manager for the AWS Lambda runtime.
+    """Manager for managing dependencies within the runtime environment.
 
-    Dependency managers are interfaced with via subprocess to ensure that the
-    correct version is being used. This is primarily target at Python
+    Dependency managers are interfaced with via the subprocess module to ensure that the
+    correct version is being managed. This is primarily targeted at Python
     dependency manager that we could import and use directly.
 
     """
@@ -33,7 +33,7 @@ class DependencyManager(CliInterfaceMixin):
 
         Args:
             context: CFNgin or Runway context object.
-            cwd: Working directory where commands will be run.
+            cwd: Location of the working directory where commands will be run.
 
         """
         self.ctx = context

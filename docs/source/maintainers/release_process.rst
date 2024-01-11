@@ -1,4 +1,4 @@
-.. _Releases: https://github.com/onicagroup/runway/releases
+.. _Releases process: https://github.com/onicagroup/runway/releases
 
 ###############
 Release Process
@@ -23,7 +23,7 @@ Execution
 *********
 
 #. Navigate to the Releases_ section of the repository on GitHub.
-   There should be a *Draft* already started that was automatically generated from PRs that were merged since the last release.
+   A *Draft* should have already been created automatically from PRs merged since the last release.
 #. Enter the *Edit* screen of the *Draft*.
 
 #. The *Title* and *Tag* fields should already be filled in with the correct values (e.g. ``v<major>.<minor>.<patch>``).
@@ -34,7 +34,7 @@ Execution
 #. Publish the release.
 
 
-At this point, GitHub Actions will begin building the deployment packages & automatically publishing them to npm, PyPi, and AWS S3.
+At this point, GitHub Actions will commence building the deployment packages and automatically publishing them to npm, PyPi, and AWS S3.
 The **Publish Release** workflow can be monitored for progress.
 It can take around 20 minutes for the process to complete.
 At which time, the logs and package repositories should be checked to verify that the release was published successfully.

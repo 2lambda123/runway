@@ -1,4 +1,5 @@
 """Test runway.lookups.handlers.random_string."""
+
 # pylint: disable=no-self-use
 from __future__ import annotations
 

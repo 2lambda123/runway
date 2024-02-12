@@ -1,4 +1,5 @@
 """Tests for runway.cfngin.actions.deploy."""
+
 # pylint: disable=no-self-use,protected-access,unused-argument
 # pyright: basic
 from __future__ import annotations

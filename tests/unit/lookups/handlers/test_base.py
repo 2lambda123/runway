@@ -1,4 +1,5 @@
 """Tests for lookup handler base class."""
+
 # pylint: disable=no-self-use
 # pyright: basic
 from __future__ import annotations

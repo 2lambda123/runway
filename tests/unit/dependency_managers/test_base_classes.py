@@ -1,4 +1,5 @@
 """Test runway.dependency_managers.base_classes."""
+
 # pylint: disable=no-self-use
 from __future__ import annotations
 

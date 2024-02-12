@@ -1,4 +1,5 @@
 """Tests for runway.cfngin.lookups.handlers.split."""
+
 # pylint: disable=no-self-use
 # pyright: basic
 import unittest

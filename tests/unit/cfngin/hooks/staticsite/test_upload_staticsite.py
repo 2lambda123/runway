@@ -1,4 +1,5 @@
 """Test runway.cfngin.hooks.staticsite.upload_staticsite."""
+
 # pylint: disable=no-self-use
 # pyright: basic
 from __future__ import annotations

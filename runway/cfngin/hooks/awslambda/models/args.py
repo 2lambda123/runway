@@ -1,4 +1,5 @@
 """Argument data models."""
+
 # pylint: disable=no-self-argument,no-self-use
 from __future__ import annotations
 

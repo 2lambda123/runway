@@ -1,4 +1,5 @@
 """Python dependency compatability handling."""
+
 import sys
 from typing import Iterable
 

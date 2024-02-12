@@ -1,4 +1,5 @@
 """Utility functions."""
+
 from __future__ import annotations
 
 import datetime
@@ -605,15 +606,13 @@ def load_object_from_string(
 @overload
 def merge_dicts(
     dict1: Dict[Any, Any], dict2: Dict[Any, Any], deep_merge: bool = ...
-) -> Dict[str, Any]:
-    ...
+) -> Dict[str, Any]: ...
 
 
 @overload
 def merge_dicts(
     dict1: List[Any], dict2: List[Any], deep_merge: bool = ...
-) -> List[Any]:
-    ...
+) -> List[Any]: ...
 
 
 def merge_dicts(
@@ -668,7 +667,7 @@ def flatten_path_lists(
     env_dict: Dict[str, Any], env_root: Optional[str] = None
 ) -> Dict[str, Any]:
     """Join paths in environment dict down to strings."""
-    for (key, val) in env_dict.items():
+    for key, val in env_dict.items():
         # Lists are presumed to be path components and will be turned back
         # to strings
         if isinstance(val, list):

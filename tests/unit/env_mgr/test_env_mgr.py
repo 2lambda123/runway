@@ -1,4 +1,5 @@
 """Test runway.env_mgr."""
+
 # pylint: disable=no-self-use,unused-argument
 # pyright: basic
 from __future__ import annotations

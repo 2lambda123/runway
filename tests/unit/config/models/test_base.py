@@ -1,4 +1,5 @@
 """Test runway.config.models.base."""
+
 # pylint: disable=no-self-use
 # pyright: basic
 from typing import Any, Dict, Optional

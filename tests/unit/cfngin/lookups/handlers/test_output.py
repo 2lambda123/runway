@@ -1,4 +1,5 @@
 """Tests for runway.cfngin.lookups.handlers.output."""
+
 # pylint: disable=no-self-use,protected-access
 from __future__ import annotations
 

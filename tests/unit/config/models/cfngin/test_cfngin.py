@@ -1,4 +1,5 @@
 """Test runway.config.models.cfngin.__init__."""
+
 # pylint: disable=no-self-use
 # pyright: basic
 import platform

@@ -1,4 +1,5 @@
 """Test runway.cfngin.lookups.handlers.awslambda."""
+
 # pylint: disable=no-self-use,redefined-outer-name
 from __future__ import annotations
 

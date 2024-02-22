@@ -1,4 +1,5 @@
 """Tests for runway.cfngin.hooks.utils."""
+
 # pylint: disable=unused-argument
 # pyright: basic, reportUnknownArgumentType=none, reportUnknownVariableType=none
 from __future__ import annotations

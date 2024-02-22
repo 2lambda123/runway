@@ -1,4 +1,5 @@
 """Tests for runway.cfngin.hooks.aws_lambda."""
+
 # pylint: disable=no-self-use
 # pyright: basic, reportUnknownArgumentType=none, reportUnknownVariableType=none
 # pyright: reportFunctionMemberAccess=none, reportOptionalMemberAccess=none
@@ -605,9 +606,11 @@ class TestDockerizePip:
         "Mounts": [
             {
                 "Target": "/var/task",
-                "Source": os.getcwd().replace("\\", "/")
-                if platform.system() == "Windows"
-                else os.getcwd(),
+                "Source": (
+                    os.getcwd().replace("\\", "/")
+                    if platform.system() == "Windows"
+                    else os.getcwd()
+                ),
                 "Type": "bind",
                 "ReadOnly": False,
             }

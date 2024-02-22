@@ -1,4 +1,5 @@
 """Tests for runway.cfngin.hooks.command."""
+
 # pylint: disable=no-self-use
 # pyright: basic
 from __future__ import annotations

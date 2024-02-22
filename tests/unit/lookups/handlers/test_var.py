@@ -1,4 +1,5 @@
 """Tests for lookup handler for var."""
+
 # pylint: disable=no-self-use
 # pyright: basic
 from __future__ import annotations

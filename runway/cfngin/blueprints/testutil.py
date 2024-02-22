@@ -1,4 +1,5 @@
 """Provides a sublass of unittest.TestCase for testing blueprints."""
+
 from __future__ import annotations
 
 import difflib

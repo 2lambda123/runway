@@ -1,4 +1,5 @@
 """Test runway.config.components.runway.base."""
+
 # pylint: disable=no-self-use,protected-access
 # pyright: basic
 from __future__ import annotations

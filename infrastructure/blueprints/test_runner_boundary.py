@@ -1,4 +1,5 @@
 """Blueprint for permissions boundary of the test runner user."""
+
 # pylint: disable=no-self-use
 from __future__ import annotations
 

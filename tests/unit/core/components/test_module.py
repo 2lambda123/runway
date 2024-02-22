@@ -1,4 +1,5 @@
 """Test runway.core.components._module."""
+
 # pylint: disable=no-self-use,protected-access,redefined-outer-name,unused-argument
 # pyright: basic
 from __future__ import annotations

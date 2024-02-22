@@ -1,4 +1,5 @@
 """Test runway.core.providers.aws.s3._helpers.sync_strategy.delete."""
+
 # pylint: disable=no-self-use
 from __future__ import annotations
 

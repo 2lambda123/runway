@@ -4,6 +4,7 @@ These are makeshift data models for use until Runway v2 is realeased and pydanti
 can be used.
 
 """
+
 # pylint: disable=no-self-argument,no-self-use
 from __future__ import annotations
 

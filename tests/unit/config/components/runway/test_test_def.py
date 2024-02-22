@@ -1,4 +1,5 @@
 """Test runway.config.components.runway._test_def."""
+
 # pylint: disable=no-self-use,protected-access
 # pyright: basic
 import pytest

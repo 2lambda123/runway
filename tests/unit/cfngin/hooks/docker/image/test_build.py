@@ -1,4 +1,5 @@
 """Test runway.cfngin.hooks.docker.image._build."""
+
 # pylint: disable=no-self-use,protected-access
 # pyright: basic
 from __future__ import annotations

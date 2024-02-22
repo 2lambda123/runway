@@ -1,4 +1,5 @@
 """Test runway.cfngin.hooks.awslambda.base_classes."""
+
 # pylint: disable=no-self-use,unused-argument
 from __future__ import annotations
 

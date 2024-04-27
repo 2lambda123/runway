@@ -1420,16 +1420,19 @@ files = [
 six = "*"
 
 [[package]]
-name = "lark-parser"
-version = "0.10.1"
+name = "lark"
+version = "1.1.9"
 description = "a modern parsing library"
 optional = false
-python-versions = "*"
+python-versions = ">=3.6"
 files = [
-    {file = "lark-parser-0.10.1.tar.gz", hash = "sha256:42f367612a1bbc4cf9d8c8eb1b209d8a9b397d55af75620c9e6f53e502235996"},
+    {file = "lark-1.1.9-py3-none-any.whl", hash = "sha256:a0dd3a87289f8ccbb325901e4222e723e7d745dbfc1803eaf5f3d2ace19cf2db"},
+    {file = "lark-1.1.9.tar.gz", hash = "sha256:15fa5236490824c2c4aba0e22d2d6d823575dcaf4cdd1848e34b6ad836240fba"},
 ]
 
 [package.extras]
+atomic-cache = ["atomicwrites"]
+interegular = ["interegular (>=0.3.1,<0.4.0)"]
 nearley = ["js2py"]
 regex = ["regex"]
 
@@ -2486,16 +2489,17 @@ six = ">=1.5"
 
 [[package]]
 name = "python-hcl2"
-version = "3.0.4"
+version = "4.3.3"
 description = "A parser for HCL2"
 optional = false
-python-versions = ">=3.6.0"
+python-versions = ">=3.7.0"
 files = [
-    {file = "python-hcl2-3.0.4.tar.gz", hash = "sha256:a300dbe2918271e6cd7ce4e7afa360eb2dbb226ee790b8e32a2a317586df8334"},
+    {file = "python-hcl2-4.3.3.tar.gz", hash = "sha256:03d1df5a025c7430ddde789695c845701269faae3bdbe37049201c0f57bbcbde"},
+    {file = "python_hcl2-4.3.3-py3-none-any.whl", hash = "sha256:8fda0b8769ceda87f2e06b1ecf63343a8e83c4f0a2b410798a81aa3b9689a25c"},
 ]
 
 [package.dependencies]
-lark-parser = ">=0.10.0,<0.11.0"
+lark = ">=1,<2"
 
 [[package]]
 name = "pytz"
